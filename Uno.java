@@ -1,9 +1,9 @@
 public class Uno{
-    private class Dos{
+    protected static class Dos{
         private int edad;
         private String nombre;
         private String direcccion;
-        //public Dos(){}
+        public Dos(){}
         public void setDirecccion(String direcccion) {
             this.direcccion = direcccion;
         }
@@ -25,8 +25,10 @@ public class Uno{
 
     }
     public static void main(String[] args) {
-            Dos d1=null;
+            Uno.Dos d1 = new Dos();
+            
             d1.setNombre("Gabriela");
+            System.out.println(d1.getNombre());
     }
 
 }
